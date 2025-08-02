@@ -1,0 +1,25 @@
+:root {
+  --button-bg: #121212;
+  --button-text: #34c94b;
+  --button-border-radius: 12px;
+  --button-font: "Poppins", sans-serif;
+}
+
+.feedbackButton {
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  border: 1px solid var(--button-text);
+  border-radius: var(--button-border-radius);
+  font-family: var(--button-font);
+  padding: 10px 16px;
+  width: 170px;
+  height: 47px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.feedbackButton:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}

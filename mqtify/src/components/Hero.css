@@ -1,0 +1,45 @@
+
+.hero-section {
+ 
+  height: 270px;
+  background-color: #121212;
+  position: relative;
+  margin: 0 auto;
+}
+
+/* Text Block */
+.hero-text-content {
+  width: 556px;
+  height: 100px;
+  position: absolute;
+  top: 101px;
+  left: 327px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+ 
+}
+
+.hero-text-content h1
+ {
+  margin: 0;
+  color: white;
+   font:"Poppins", sans-serif;
+}
+
+.hero-text-content h1 {
+  font-size: 24px;
+  font-weight: 700;
+  
+}
+
+
+/* Headphone Image */
+.hero-headphone {
+  position: absolute;
+   top: 50px;
+  left: 914px;
+  width: 212px;
+  height: 212px;
+}
