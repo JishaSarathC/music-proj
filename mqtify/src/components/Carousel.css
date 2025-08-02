@@ -1,0 +1,10 @@
+.carousel-container {
+  width: 100%;
+  position: relative;
+  padding: 10px 0;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: #34c94b; /* Green from Figma */
+}

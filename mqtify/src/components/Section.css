@@ -1,0 +1,19 @@
+.section-container {
+  margin: 24px 32px;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color:  #34c94b; /* Optional: match your theme */
+}
+
+.swiper {
+  padding-bottom: 20px;
+}
