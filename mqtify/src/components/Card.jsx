@@ -1,34 +1,23 @@
-import React from "react";
-import { Chip } from "@mui/material";
-import "./Card.css";
+// src/components/Card.jsx
 
-const Card = ({ image, follows, title , isSong}) => {
+import React from "react";
+import "./Card.css";
+const Card = ({ image, title, follows, likes }) => {
   return (
-    <div className="album-card">
-      <img src={image} alt={title} className="album-image" />
-      <Chip
-        label={`${follows} Follows`}
-        className="follow-chip"
-        size="small"
-        style={{
-          position: "absolute",
-          top: "10px",
-          left: "10px",
-          backgroundColor: "#121212",
-          color: "white",
-          fontSize: "12px",
-        }}
-      />
-      <p className="album-name">{title}</p>
-       <div className="card">
-      <img src={image} alt={title} />
-      <div className="card-info">
-        <span className="chip">{isSong ? `${follows} Likes` : `${follows} Follows`}</span>
-        <p>{title}</p>
+    <div className="card">
+      <img src={image} alt={title} className="card-img" />
+      <div className="card-content">
+        {follows !== undefined && (
+          <div className="card-tag">{follows} Follows</div>
+        )}
+        {likes !== undefined && (
+          <div className="card-tag">{likes} Likes</div>
+        )}
+        <p className="card-title">{title}</p>
       </div>
-    </div>
     </div>
   );
 };
+
 
 export default Card;

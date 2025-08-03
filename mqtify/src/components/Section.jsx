@@ -2,8 +2,6 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Card from "./Card";
 import "./Section.css";
-
-// Swiper imports
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import "swiper/css";
@@ -22,7 +20,9 @@ const Section = ({ title, fetchUrl }) => {
   return (
     <div className="section-container">
       <div className="section-header">
-        <h2>{title}</h2>
+        
+        <h2 className="section-title">{title}</h2>
+        <button className="show-all-btn">Show all</button>
         {/* Remove Show All button since carousel will handle scrolling */}
       </div>
 
@@ -51,5 +51,5 @@ const Section = ({ title, fetchUrl }) => {
   );
 };
 
-export default Section;
+export default Section;  
 

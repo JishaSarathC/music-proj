@@ -1,0 +1,15 @@
+.section {
+  background-color: black;
+  padding: 16px;
+  margin-bottom: 24px;
+  border-radius: 8px;
+}
+
+.section h2 {
+  color: white;
+  margin-bottom: 12px;
+}
+
+.home-page {
+  padding: 24px;
+}

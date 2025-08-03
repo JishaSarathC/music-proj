@@ -1,5 +1,7 @@
 .section-container {
-  margin: 24px 32px;
+  margin-bottom: 40px;
+  padding: 0 16px;
+  position: relative;
 }
 
 .section-header {
@@ -9,11 +11,21 @@
   margin-bottom: 16px;
 }
 
-.swiper-button-next,
-.swiper-button-prev {
-  color:  #34c94b; /* Optional: match your theme */
+.section-title {
+  color: white;
+  font-size: 24px;
+  font-weight: 600;
 }
 
-.swiper {
-  padding-bottom: 20px;
+.show-all-btn {
+  background: none;
+  border: none;
+  color: #3ddc84;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.show-all-btn:hover {
+  text-decoration: underline;
 }
